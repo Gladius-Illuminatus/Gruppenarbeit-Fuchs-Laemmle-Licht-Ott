@@ -1,0 +1,23 @@
+Übung 3 (u4.webserver)Im Package u4.werbserver befinden sich zwei Ordner (files und files2).
+
+Mittels der Variablen: privateString basicFilePath= "src/u4/webserver/files/"in der internenKlasse
+BrowserClientThreadkann der verwendete Ordner parametriert werden.
+
+Stellen Sie die Variable zunächst auf den Ordner files.
+
+Analysieren Siebitte zunächst die beiden Dateien index.html und page2.html im Ordner files
+Was geschieht, wenn der Browser die Seite index.html aufruft?
+1 error und 2 warnings. HTML DOCTYPE ist nicht deklariert in index.html.
+Die warnings sagen dass eine Ressource nicht geladen werden konnte.
+
+Analysieren den Console-Output?Was geschieht beim Aufruf der Seite page2.html?
+
+1 error und 2 warnings. HTML DOCTYPE ist nicht deklariert in page2.html.
+Die warnings sagen dass eine Ressource nicht geladen werden konnte.
+
+Wie wird das Bild geladen?
+
+mit einem image tag und src attribut wurde es eingebunden beim aufrufen von page2.html.
+
+
+Stellen Sie bitte den Ordner um auf files2 (privateString basicFilePath= "src/u4/webserver/files2/")Analysieren Sie bitte den Console-Output

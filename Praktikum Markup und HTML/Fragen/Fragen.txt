@@ -1,0 +1,136 @@
+4) Praktikum Markup und HTML
+
+
+
+##Aufgabe 1a:
+
+#Wie werden die Felder an den Server übermittelt? Wie sind Umlaute codiert? Warum?
+
+Sie werden mithilfe von zwei Methoden übertragen.
+GET Methode: Daten, die an den Server gesendet werden sollen, werden direkt in die URL geschrieben.
+POST Methode: schreibt die URL-Parameter in den HTTP-Request für den Server. Sie sind damit für Benutzer nicht sichtbar.
+Umlaute werden durch das “%” Symbol und zwei hexadezimal Zeichen.
+Damit werden die User Informationen am ersten Blick geschützt.
+
+
+#Wozu dient das fieldset - Element? Wie wird der «Titel» eines Fieldsets definiert?
+Fieldset ermöglicht die Gruppierung von mehreren Elemente eines Formular.
+Der Titel eines fieldset wir mit einer Legende definiert
+
+
+#Was geschieht, wenn Sie ein Label mit der Maus anklicken?
+das Input-Element (Checkbox, Textfield, Radio Button, usw…) wird angesprochen.
+
+#Wie werden die label -Elemente mit den Eingabefeldern verknüpft?
+“<label for=”id Name”> mit der Id des Input Elements.
+
+
+#Wozu dient das name -Attribut? Kann es weggelassen werden?
+Das name -Attribut dient dazu, dem Input Element einen Anzeigenamen zu geben.
+
+
+
+#Wie kann man Eingabewerte in den Feldern vordefinieren?
+Man kann dem Input Element ein Wert (value) geben. Zum Beispiel den value = “text”. So kann man die Art des Inputs vordefinieren
+
+
+#Studieren Sie die vom serverseitigen Script ausgegebenen Environment-Variablen. Welche Informationen kann man diesen entnehmen?
+#Wird auch ausgegeben, von welchem Computer die Formulardaten geschickt wurden?
+
+Man erhält u.A. Informationen über Login und Passwort des Benutzer, sowie den Port von welchem die Anfrage kommt und den Browser.
+
+
+#Analysieren Sie im Browser mit Hilfe der Entwicklertools – Tab Netzwork den Request und den Response:
+#Wozu dienen die Angaben: user-agent, accept, host, content-length, content-type, scheme, method, status ?
+Diese Informationen beziehen sich auf die Client-Server Verbindung.
+So beschreibt der content-type die Art des DoKuments und Content-length die größe des Dokuments.
+
+
+
+
+##Aufgabe 1b:
+
+#Was ist der Unterschied bei der Übertragung der Daten?
+#Verwenden Sie die Browser Entwicklertools, um den Datenaustausch zwischen dem Browser und Server zu beobachten.
+
+Wen eine schneller Datenaustausch zwischen Browser und Server benötigt wird, ist die POST Methode die korrekte.
+Bei der GET Methode haben wir einschrenkungen in der Sicherheit, weil derURL encodet werden muss.
+
+
+#Würden Sie für dieses Formular GET oder POST bevorzugen? Warum?
+
+Wir würden die POST Methode bevorzugen, weil wir nicht wissen ob der URL encodet ist oder nicht.
+
+
+
+
+
+##Aufgabe 1c:
+
+#Wie werden mehrere Werte bei einer Mehrfachselektion übertragen? Verwenden Sie die Entwicklertools des Browsers.
+#Hinweis: Das PHP-Script, das die Daten entgegen nimmt, liefert alle ausgewählten Elemente in einem Array, wenn das name -Attribut auf [] endet, z.B.:
+#name="course[]" .
+
+Für die Übertragung werden die Werte mit einem Array gesendet.
+Die Ausgabe siet wie folgt aus:	"Kurse":["Kurs1","Kurs2","Kurs3"]
+
+
+#Ergänzen Sie noch ein input -Feld vom Typ hidden und geben diesem ein name - und ein value - Attribut.
+#Kommt der Wert ebenfalls am Server an? Wozu sind Felder vom Typ hidden gut und zu welchem Zweck können sie verwendet werden?
+
+Kommt der Wert ebenfalls am Server an? => Ja der Wert kommt am Server an
+Wozu sind Felder vom Typ hidden gut => Können als zusazinformationen für Programmierer benuzt werden.
+und zu welchem Zweck können sie verwendet werden? => Austausch von Informationen unter Programmierer
+
+
+
+
+
+##Aufgabe 1d:
+
+#Wie können die Formularfelder validiert werden?
+
+Formularfeler können automatisch beim weitergehen zum nächsten feld validiert werden. Nachträgliche bearbeitung ist möglich bis submitt gedrükt wird.
+Dann werden die Daten automatisch gespeichert.
+
+
+#Wie können Sie Pflichtfelder definieren?
+
+Pflichtfelder müssen mit dem Attribut "requred" versehen werden.
+
+#Wird das Formular bei Validierungsfehlern übermittelt?
+
+Nein, In diesem Fall wird eine error message ausgegeben.
+
+
+#Wie können Sie die Felder mit einem Musterinhalt belegen, der entfernt wird, sobald Sie das Feld anwählen?
+
+Dafür wird ein PLaceholder definiert.
+
+
+#Wie können Sie den Fokus/Cursor nach dem Laden der Seite automatisch in einem bestimmten Feld positionieren? (ohne JavaScript)
+
+Dazu wird das Target Attribut verwendet.
+
+
+
+
+##Aufgabe 2:
+
+#Testen Sie mit verschiedenen Browsern, ob die Formel angezeigt wird.
+#Mindestens in aktuellen Firefox-Browsern (sowie im Safari Browser - MacOS) sollte es funktionieren.
+
+Die Anzeige funktionniert in folgenden browsern  Getested: Firefox-yes, Chrome-yes
+
+
+#Sehen Sie sich den Quellcode von math.html an. Können Sie die einzelnen Elemente der Formel identifizieren?
+#Ändern Sie die Formel leicht ab und überprüfen Sie, ob die Anzeige wie erwartet ausfällt.
+
+Um den Quellcode zu bearbeiten muss dieser zuerst aus XML in HTML umgesetzt werden. Nun können Änderungen vorgenommen werden
+
+#Da nicht alle Browser mit MathML umgehen können, gibt es JavaScript-Bibliotheken, die diese Lücke füllen.
+#In math.html sind zwei noch auskommentierte script -Elemente enthalten, die die MathJax-Bibliothek laden.
+#Probieren Sie beide Varianten (einzeln, nicht beide zusammen) in verschiedenen Browsern aus.
+#In der ersten Variante wird die Formel für die Darstellung in SVG umgewandelt, in der zweiten wird HTML und CSS für die Darstellung verwendet
+
+Die Anzeige funktionniert in folgenden browsern  Getested: Firefox-yes, Chrome-yes

@@ -1,0 +1,7 @@
+Übung 2 (u3.basicwebserver)Analysieren Sie bitte Basis-Webserver.
+
+Was geschieht bei einer Client-Anfrage.?
+
+Die Anfrage wird bei HandleRequest verarbeitet und aus dem Bufferr wird der inhalt ausgelesen
+
+Wie wird die Meldung an den Browser aufbereitet?

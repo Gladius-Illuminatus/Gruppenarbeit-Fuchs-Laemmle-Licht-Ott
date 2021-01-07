@@ -1,0 +1,14 @@
+Übung 1 (u2.chat)Analysieren Sie bitte den Chart-Server und den Chat-Client.
+
+a)Was geschieht bei einer neuen Clientanfrage im Server?
+
+Der client ruft "netzwerkeinrichten" auf und
+initialisiert einen Socket auf dem localhost.
+Parallel gibt es beim Server los() in der ein ServerSocket erstellt wird.
+Client sowie Server Socket können miteinander kommunizieren.
+
+
+b)Wie kann der Server alle Clients informieren?
+
+In der methode "esAllenWeitersagen" werden alle
+clients durch iteriert und mit der nachricht benachrichtigt.
